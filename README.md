@@ -1,4 +1,4 @@
-# Hospital-
+# Hospital
 
 - Parte 1 - Mãos a Obra
   
