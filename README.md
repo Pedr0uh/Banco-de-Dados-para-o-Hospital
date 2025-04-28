@@ -1,6 +1,6 @@
-# Hospital
+# Banco de Dados de um Hospital
 
-**Parte 1 - Mãos a Obra**
+##Parte 1 - Mãos a Obra**
   
 Analise a seguinte descrição e extraia dela os requisitos para o banco de dados em um diagrama, fluxograma ou afins:
 O hospital necessita de um sistema para sua área clínica que ajude a controlar consultas realizadas. Os médicos podem ser generalistas, especialistas ou residentes e têm seus dados pessoais cadastrados em planilhas digitais. Cada médico pode ter uma ou mais especialidades, que podem ser pediatria, clínica geral, gastroenterologia e dermatologia. Alguns registros antigos ainda estão em formulário de papel, mas será necessário incluir esses dados no novo sistema.
@@ -17,3 +17,21 @@ Deseja-se ainda informatizar a receita do médico, de maneira que, no encerramen
 
 <img src="images/consultasBase.png" alt="Base de Dados Consultas" width="550"/>
 
+##Parte 2 - Não era exatamente assim 
+
+Considere a seguinte descrição:
+
+No hospital, as internações têm sido registradas por meio de formulários eletrônicos que gravam os dados em arquivos. 
+
+Para cada internação, são anotadas a data de entrada, a data prevista de alta e a data efetiva de alta, além da descrição textual dos procedimentos a serem realizados. 
+
+**Obs: colocadas junto com paciente, com a caracteristica em boolean se esta internado ou não**
+
+As internações precisam ser vinculadas a quartos, com a numeração e o tipo. 
+
+Cada tipo de quarto tem sua descrição e o seu valor diário (a princípio, o hospital trabalha com apartamentos, quartos duplos e enfermaria).
+
+<img src="images/quartosBase.png" alt="Base de Dados Quartos" width="550">
+
+Também é necessário controlar quais profissionais de enfermaria estarão responsáveis por acompanhar o paciente durante sua internação. Para cada enfermeiro(a), é necessário nome, CPF e registro no conselho de enfermagem (COREN).
+A internação, obviamente, é vinculada a um paciente – que pode se internar mais de uma vez no hospital – e a um único médico responsável.
