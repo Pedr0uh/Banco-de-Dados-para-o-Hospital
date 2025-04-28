@@ -31,7 +31,7 @@ As internações precisam ser vinculadas a quartos, com a numeração e o tipo.
 
 Cada tipo de quarto tem sua descrição e o seu valor diário (a princípio, o hospital trabalha com apartamentos, quartos duplos e enfermaria).
 
-<img src="images/quartosBase.png" alt="Base de Dados Quartos" width="550">
+<img src="images/quartosBase.png" alt="Base de Dados Quartos" width="200">
 
 Também é necessário controlar quais profissionais de enfermaria estarão responsáveis por acompanhar o paciente durante sua internação. Para cada enfermeiro(a), é necessário nome, CPF e registro no conselho de enfermagem (COREN).
 A internação, obviamente, é vinculada a um paciente – que pode se internar mais de uma vez no hospital – e a um único médico responsável.
