@@ -9,7 +9,7 @@ O hospital necessita de um sistema para sua área clínica que ajude a controlar
 
 Os pacientes também precisam de cadastro, contendo dados pessoais (nome, data de nascimento, endereço, telefone e e-mail), documentos (CPF e RG) e convênio. Para cada convênio, são registrados nome, CNPJ e tempo de carência.
 
-<img src="images/pacienteBase.png" alt="Base de Dados Paciente" width="550"/>
+<img src="images/pacientesBase.png" alt="Base de Dados Paciente" width="550"/>
 
 As consultas também têm sido registradas em planilhas, com data e hora de realização, médico responsável, paciente, valor da consulta ou nome do convênio, com o número da carteira. Também é necessário indicar na consulta qual a especialidade buscada pelo paciente.
 
