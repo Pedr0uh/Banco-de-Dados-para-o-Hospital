@@ -61,4 +61,6 @@ db.medicos.updateMany( {}, { $set: em_atividade: true } )
 ```
 
 Crie um script para atualizar ao menos dois médicos como inativos e os demais em atividade.
-
+```js
+db.medicos.updateMany( { nome_medico: { $in: [ "Dra. Mariana Souza", "Dr. Gustavo Carvalho" ] } }, { $set: { em_atividade: false } } )
+```
