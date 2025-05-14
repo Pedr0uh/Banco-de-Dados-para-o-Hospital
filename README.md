@@ -38,3 +38,25 @@ A internação, obviamente, é vinculada a um paciente – que pode se internar 
 
 <img src="images/enfermeirosBase.png" alt="Base de Dados Enfermeiros" width="450">
 
+# Parte 3  - Jogando nas regras que você criou:  
+Crie scripts de povoamento dos documentos desenvolvidas na atividade anterior
+Observe as seguintes atividades: 
+
+- 12 medicos, ao menos sete especialidades (considere a afirmação de que “entre as especialidades há pediatria, clínica geral, gastrenterologia e dermatologia”).
+- 15 pacientes
+- 20 consultas
+- Relacione as internações com IDs de Médicos e Pacientes
+- 7 internações (entre 01/01/2015 e 01/01/2022)
+- 10 profissionais de enfermaria
+
+Parte 4 - Inserido Dados 
+Pensando no banco que já foi criado para o Projeto do Hospital, realize algumas alterações nas tabelas e nos dados usando comandos de atualização e exclusão:
+
+Crie um script que adicione uma coluna “em_atividade” para os médicos, indicando se ele ainda está atuando no hospital ou não.
+Query:
+'''
+db.medicos.updateMany( {}, { $set: em_atividade: true } )
+'''
+
+Crie um script para atualizar ao menos dois médicos como inativos e os demais em atividade.
+
