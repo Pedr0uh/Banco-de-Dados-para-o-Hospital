@@ -73,10 +73,38 @@ Crie um script e nele inclua consultas que retornem:
 
 1. Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio:
 ```js
-
+  db.consultas.aggregate([
+  {
+    $match: {
+      "data_e_hora": {
+        $gte: ISODate("2020-01-01T00:00:00Z"),
+        $lte: ISODate("2020-12-31T23:59:59Z")
+      }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      consultas: { $push: "$$ROOT" },
+      media_valor: { $avg: "$consulta_valor.valor" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      consultas: 1,
+      media_valor: 1
+    }
+  }
+])
 ```
+R: existem duas consultas apenas em 2020 e as duas não foram feitas sob convenio, o valor medio das duas consultas é de 200
 
-Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta.
+
+Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta:
+
+
+
 Receituário completo da primeira consulta registrada com receituário associado.
 Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio).
 Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta.
