@@ -1,0 +1,39 @@
+[
+	{
+		"numero_quarto": "101",
+		"tipo_quarto": "Apartamento",
+		"valor_diario": "500.00",
+		"tipo": "Individual",
+		"COREN_infermeiro_responsalvel": "111111-SP",
+		"COREN_infermeiro_responsalvel_2": "999999-SP",
+		"internacao": false
+	},
+	{
+		"numero_quarto": "102",
+		"tipo_quarto": "Quarto Duplo",
+		"valor_diario": "300.00",
+		"tipo": "Compartilhado",
+		"COREN_infermeiro_responsalvel": "222222-SP",
+		"COREN_infermeiro_responsalvel_2": "333333-SP",
+		"internacao": false
+	},
+	{
+		"numero_quarto": "201",
+		"tipo_quarto": "Enfermaria",
+		"valor_diario": "150.00",
+		"tipo": "Coletivo",
+		"COREN_infermeiro_responsalvel": "444444-SP",
+		"COREN_infermeiro_responsalvel_2": "555555-SP",
+		"internacao": false
+	},
+	{
+		"numero_quarto": "202",
+		"tipo_quarto": "Apartamento",
+		"valor_diario": "700.00",
+		"tipo": "Individual",
+		"COREN_infermeiro_responsalvel": "666666-SP",
+		"COREN_infermeiro_responsalvel_2": "777777-SP",
+		"internacao": false
+	}
+]
+

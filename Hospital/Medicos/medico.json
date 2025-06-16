@@ -1,0 +1,363 @@
+[
+	{
+		"nome_medico": "Dr. Elias Monteverde",
+		"data_de_nascimento": "15-03-1980",
+		"tipo": "especilista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": false,
+			"gastroenterologia": true,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "123456-SP",
+			"RG": "44.987.321-9",
+			"CPF": "123.456.789-01"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11912345678",
+				"descricao": "Telefone celular principal para contato direto com pacientes e colegas."
+			},
+			"contato_2": {
+				"telefone": "11988765432",
+				"descricao": "Telefone de uso profissional exclusivo para consultas médicas e agendamentos."
+			},
+			"email": {
+				"email_pessoal": "elias.monteverde@gmail.com.br",
+				"email_profissional": "elias.monteverde@vidaserena.com.br"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Ana Beatriz",
+		"data_de_nascimento": "10-06-1985",
+		"tipo": "generalista",
+		"especialidade": {
+			"pediatra": true,
+			"clinica_geral": false,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "987654-SP",
+			"RG": "11.222.333-4",
+			"CPF": "123.123.123-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11955555555",
+				"descricao": "Telefone celular para uso pessoal e profissional."
+			},
+			"contato_2": {
+				"telefone": "11944444444",
+				"descricao": "Telefone secundário para emergências e assuntos administrativos."
+			},
+			"email": {
+				"email_pessoal": "ana.beatriz@gmail.com",
+				"email_profissional": "ana.beatriz@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dr. Rafael Dias",
+		"data_de_nascimento": "04-12-1977",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": false,
+			"gastroenterologia": false,
+			"dermatologia": true
+		},
+		"documentos": {
+			"CRM": "654321-SP",
+			"RG": "22.333.444-5",
+			"CPF": "987.987.987-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11977777777",
+				"descricao": "Número de contato para consultas e emergências."
+			},
+			"contato_2": {
+				"telefone": "11988888888",
+				"descricao": "Telefone exclusivo para comunicação com o hospital."
+			},
+			"email": {
+				"email_pessoal": "rafael.dias@gmail.com",
+				"email_profissional": "rafael.dias@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Clara Lima",
+		"data_de_nascimento": "12-03-1990",
+		"tipo": "residente",
+		"especialidade": {
+			"pediatra": true,
+			"clinica_geral": true,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "555554-SP",
+			"RG": "33.444.555-6",
+			"CPF": "456.456.456-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11933333333",
+				"descricao": "Telefone de residência e emergências."
+			},
+			"contato_2": {
+				"telefone": "11999999999",
+				"descricao": "Telefone secundário para suporte em horários fora do expediente."
+			},
+			"email": {
+				"email_pessoal": "clara.lima@gmail.com",
+				"email_profissional": "clara.lima@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dr. Miguel Alves",
+		"data_de_nascimento": "20-05-1980",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": true,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "444445-SP",
+			"RG": "44.555.666-7",
+			"CPF": "321.321.321-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11922222222",
+				"descricao": "Telefone exclusivo para consultas médicas."
+			},
+			"contato_2": {
+				"telefone": "11966666666",
+				"descricao": "Telefone auxiliar para emergências médicas."
+			},
+			"email": {
+				"email_pessoal": "miguel.alves@gmail.com",
+				"email_profissional": "miguel.alves@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Sofia Martins",
+		"data_de_nascimento": "17-08-1975",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": false,
+			"gastroenterologia": true,
+			"dermatologia": true
+		},
+		"documentos": {
+			"CRM": "333332-SP",
+			"RG": "55.666.777-8",
+			"CPF": "654.654.654-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11911111111",
+				"descricao": "Contato principal para agendamentos e emergências."
+			},
+			"contato_2": {
+				"telefone": "11933333333",
+				"descricao": "Contato secundário para suporte hospitalar."
+			},
+			"email": {
+				"email_pessoal": "sofia.martins@gmail.com",
+				"email_profissional": "sofia.martins@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dr. Ricardo Santos",
+		"data_de_nascimento": "25-11-1982",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": true,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "112233-SP",
+			"RG": "66.777.888-9",
+			"CPF": "111.222.333-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11945454545",
+				"descricao": "Telefone principal para consultas e emergências."
+			},
+			"contato_2": {
+				"telefone": "11989898989",
+				"descricao": "Telefone de uso administrativo e hospitalar."
+			},
+			"email": {
+				"email_pessoal": "ricardo.santos@gmail.com",
+				"email_profissional": "ricardo.santos@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Juliana Costa",
+		"data_de_nascimento": "19-02-1991",
+		"tipo": "residente",
+		"especialidade": {
+			"pediatra": true,
+			"clinica_geral": false,
+			"gastroenterologia": true,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "223344-SP",
+			"RG": "77.888.999-0",
+			"CPF": "444.555.666-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11932323232",
+				"descricao": "Contato para emergências e suporte hospitalar."
+			},
+			"contato_2": {
+				"telefone": "11967676767",
+				"descricao": "Telefone exclusivo para agendamentos médicos."
+			},
+			"email": {
+				"email_pessoal": "juliana.costa@gmail.com",
+				"email_profissional": "juliana.costa@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dr. Fernando Oliveira",
+		"data_de_nascimento": "03-07-1978",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": false,
+			"gastroenterologia": true,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "334455-SP",
+			"RG": "88.999.000-1",
+			"CPF": "777.888.999-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11956565656",
+				"descricao": "Contato profissional para consultas e emergências."
+			},
+			"contato_2": {
+				"telefone": "11943434343",
+				"descricao": "Telefone para comunicação com o hospital."
+			},
+			"email": {
+				"email_pessoal": "fernando.oliveira@gmail.com",
+				"email_profissional": "fernando.oliveira@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Paula Mendes",
+		"data_de_nascimento": "12-04-1984",
+		"tipo": "especialista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": false,
+			"gastroenterologia": false,
+			"dermatologia": true
+		},
+		"documentos": {
+			"CRM": "445566-SP",
+			"RG": "99.000.111-2",
+			"CPF": "888.999.000-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11978787878",
+				"descricao": "Telefone principal para contato médico."
+			},
+			"contato_2": {
+				"telefone": "11912121212",
+				"descricao": "Telefone adicional para suporte e agendamentos."
+			},
+			"email": {
+				"email_pessoal": "paula.mendes@gmail.com",
+				"email_profissional": "paula.mendes@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dr. Gustavo Carvalho",
+		"data_de_nascimento": "09-09-1987",
+		"tipo": "generalista",
+		"especialidade": {
+			"pediatra": false,
+			"clinica_geral": true,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "556677-SP",
+			"RG": "00.111.222-3",
+			"CPF": "999.000.111-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11934343434",
+				"descricao": "Telefone para uso exclusivo de emergências."
+			},
+			"contato_2": {
+				"telefone": "11965656565",
+				"descricao": "Contato principal para comunicação com pacientes."
+			},
+			"email": {
+				"email_pessoal": "gustavo.carvalho@gmail.com",
+				"email_profissional": "gustavo.carvalho@hospitalvida.com"
+			}
+		}
+	},
+	{
+		"nome_medico": "Dra. Mariana Souza",
+		"data_de_nascimento": "14-06-1989",
+		"tipo": "residente",
+		"especialidade": {
+			"pediatra": true,
+			"clinica_geral": true,
+			"gastroenterologia": false,
+			"dermatologia": false
+		},
+		"documentos": {
+			"CRM": "667788-SP",
+			"RG": "11.222.333-4",
+			"CPF": "222.333.444-00"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone": "11987878787",
+				"descricao": "Telefone principal para consultas pediátricas."
+			},
+			"contato_2": {
+				"telefone": "11954545454",
+				"descricao": "Contato secundário para emergências hospitalares."
+			},
+			"email": {
+				"email_pessoal": "mariana.souza@gmail.com",
+				"email_profissional": "mariana.souza@hospitalvida.com"
+			}
+		}
+	}
+]
+

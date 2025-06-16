@@ -1,0 +1,590 @@
+[
+	{
+		"nome_paciente": "João Silva",
+		"data_de_nascimento": "1985-07-23",
+		"endereco": {
+			"cep": "01234-567",
+			"endereco": "Rua das Flores",
+			"numero": "120"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 98765-4321",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3456-7890",
+				"descricao": "Residencial"
+			},
+			"email": "joao.silva@email.com"
+		},
+		"documentos": {
+			"RG": "12345678",
+			"CPF": "987.654.321-00",
+			"cartao_do_SUS": "654321987"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Saúde Plus",
+			"CNPJ": "12.345.678/0001-90",
+			"tempo_de_carencia": "90 dias"
+		},
+		"tipo_saguineo": "O+",
+		"Altura_e_peso": {
+			"altura": "1.75",
+			"peso": "78"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Hipertensão controlada",
+		"preferencias": "Prefere ser atendido por médicos homens",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "123456",
+			"nome_do_medicamento": "Losartana",
+			"dosagem": "50mg",
+			"duracao": "30 dias",
+			"indicacao": "Controle de pressão arterial",
+			"observacao": "Tomar uma vez ao dia pela manhã"
+		}
+	},
+	{
+		"nome_paciente": "Maria Oliveira",
+		"data_de_nascimento": "1992-11-15",
+		"endereco": {
+			"cep": "04321-678",
+			"endereco": "Avenida Central",
+			"numero": "205"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 91234-5678",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 4002-8922",
+				"descricao": "Residencial"
+			},
+			"email": "maria.oliveira@email.com"
+		},
+		"documentos": {
+			"RG": "87654321",
+			"CPF": "123.456.789-00",
+			"cartao_do_SUS": "987654321"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "A-",
+		"Altura_e_peso": {
+			"altura": "1.65",
+			"peso": "60"
+		},
+		"sexo": "Feminino",
+		"alergias": "Lactose",
+		"historico_medico": "Asma",
+		"preferencias": "Prefere consultas pela manhã",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "654321",
+			"nome_do_medicamento": "Salbutamol",
+			"dosagem": "100mcg",
+			"duracao": "Uso contínuo",
+			"indicacao": "Tratamento de asma",
+			"observacao": "Uso em crises respiratórias"
+		}
+	},
+	{
+		"nome_paciente": "Carlos Pereira",
+		"data_de_nascimento": "1988-09-10",
+		"endereco": {
+			"cep": "04567-890",
+			"endereco": "Rua do Comércio",
+			"numero": "56"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 93456-7890",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3456-7890",
+				"descricao": "Residencial"
+			},
+			"email": "carlos.pereira@email.com"
+		},
+		"documentos": {
+			"RG": "54321678",
+			"CPF": "321.654.987-00",
+			"cartao_do_SUS": "876543210"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Saúde Premium",
+			"CNPJ": "34.567.890/0001-12",
+			"tempo_de_carencia": "120 dias"
+		},
+		"tipo_saguineo": "B+",
+		"Altura_e_peso": {
+			"altura": "1.80",
+			"peso": "85"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Histórico de enxaquecas",
+		"preferencias": "Prefere consultas à tarde",
+		"medicamentos": {
+			"receitado": false,
+			"CRM_do_medico": "",
+			"nome_do_medicamento": "",
+			"dosagem": "",
+			"duracao": "",
+			"indicacao": "",
+			"observacao": ""
+		}
+	},
+	{
+		"nome_paciente": "Ana Souza",
+		"data_de_nascimento": "1975-03-25",
+		"endereco": {
+			"cep": "09876-543",
+			"endereco": "Avenida Paulista",
+			"numero": "234"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 92345-6789",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 5678-9012",
+				"descricao": "Residencial"
+			},
+			"email": "ana.souza@email.com"
+		},
+		"documentos": {
+			"RG": "87654321",
+			"CPF": "123.645.789-00",
+			"cartao_do_SUS": "135792468"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "A+",
+		"Altura_e_peso": {
+			"altura": "1.62",
+			"peso": "65"
+		},
+		"sexo": "Feminino",
+		"alergias": "Poeira",
+		"historico_medico": "Histórico de bronquite",
+		"preferencias": "Prefere atendimento rápido",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "789123",
+			"nome_do_medicamento": "Cetirizina",
+			"dosagem": "10mg",
+			"duracao": "30 dias",
+			"indicacao": "Tratamento de alergia",
+			"observacao": "Tomar antes de dormir"
+		}
+	},
+	{
+		"nome_paciente": "Lucas Lima",
+		"data_de_nascimento": "1998-04-12",
+		"endereco": {
+			"cep": "10100-123",
+			"endereco": "Rua das Palmeiras",
+			"numero": "87"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 98700-1111",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3456-1111",
+				"descricao": "Residencial"
+			},
+			"email": "lucas.lima@email.com"
+		},
+		"documentos": {
+			"RG": "34567890",
+			"CPF": "456.789.123-00",
+			"cartao_do_SUS": "789123456"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Hospital Seguro",
+			"CNPJ": "45.678.901/0001-34",
+			"tempo_de_carencia": "60 dias"
+		},
+		"tipo_saguineo": "AB+",
+		"Altura_e_peso": {
+			"altura": "1.82",
+			"peso": "80"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Nenhum",
+		"preferencias": "Prefere médicos experientes",
+		"medicamentos": {
+			"receitado": false,
+			"CRM_do_medico": "",
+			"nome_do_medicamento": "",
+			"dosagem": "",
+			"duracao": "",
+			"indicacao": "",
+			"observacao": ""
+		}
+	},
+	{
+		"nome_paciente": "Fernanda Costa",
+		"data_de_nascimento": "1982-06-30",
+		"endereco": {
+			"cep": "20222-333",
+			"endereco": "Avenida das Rosas",
+			"numero": "111"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 98722-3333",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3555-3333",
+				"descricao": "Residencial"
+			},
+			"email": "fernanda.costa@email.com"
+		},
+		"documentos": {
+			"RG": "56789012",
+			"CPF": "789.123.456-00",
+			"cartao_do_SUS": "123456789"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "O-",
+		"Altura_e_peso": {
+			"altura": "1.60",
+			"peso": "58"
+		},
+		"sexo": "Feminino",
+		"alergias": "Poeira",
+		"historico_medico": "Crise de rinite alérgica",
+		"preferencias": "Prefere atendimento rápido",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "987654",
+			"nome_do_medicamento": "Desloratadina",
+			"dosagem": "5mg",
+			"duracao": "Uso contínuo",
+			"indicacao": "Tratamento de rinite",
+			"observacao": "Tomar uma vez ao dia"
+		}
+	},
+	{
+		"nome_paciente": "Ricardo Mendes",
+		"data_de_nascimento": "1990-02-14",
+		"endereco": {
+			"cep": "05555-666",
+			"endereco": "Rua das Acácias",
+			"numero": "45"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 90001-5555",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3012-5555",
+				"descricao": "Residencial"
+			},
+			"email": "ricardo.mendes@email.com"
+		},
+		"documentos": {
+			"RG": "11122333",
+			"CPF": "222.333.444-55",
+			"cartao_do_SUS": "333222111"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Saúde Forte",
+			"CNPJ": "22.333.444/0001-56",
+			"tempo_de_carencia": "90 dias"
+		},
+		"tipo_saguineo": "O+",
+		"Altura_e_peso": {
+			"altura": "1.75",
+			"peso": "72"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Hipertensão leve",
+		"preferencias": "Prefere médicos jovens",
+		"medicamentos": {
+			"receitado": false,
+			"CRM_do_medico": "",
+			"nome_do_medicamento": "",
+			"dosagem": "",
+			"duracao": "",
+			"indicacao": "",
+			"observacao": ""
+		}
+	},
+	{
+		"nome_paciente": "Juliana Alves",
+		"data_de_nascimento": "1987-08-21",
+		"endereco": {
+			"cep": "04444-777",
+			"endereco": "Avenida das Oliveiras",
+			"numero": "98"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 92222-7777",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3666-7777",
+				"descricao": "Residencial"
+			},
+			"email": "juliana.alves@email.com"
+		},
+		"documentos": {
+			"RG": "44455666",
+			"CPF": "555.666.777-88",
+			"cartao_do_SUS": "666555444"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "A-",
+		"Altura_e_peso": {
+			"altura": "1.68",
+			"peso": "65"
+		},
+		"sexo": "Feminino",
+		"alergias": "Glúten",
+		"historico_medico": "Intolerância alimentar",
+		"preferencias": "Prefere médicos experientes",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "111222",
+			"nome_do_medicamento": "Antialérgico X",
+			"dosagem": "5mg",
+			"duracao": "Uso contínuo",
+			"indicacao": "Controle de alergia",
+			"observacao": "Tomar antes de dormir"
+		}
+	},
+	{
+		"nome_paciente": "Marcos Silva",
+		"data_de_nascimento": "1995-07-08",
+		"endereco": {
+			"cep": "03333-999",
+			"endereco": "Rua dos Jasmins",
+			"numero": "56"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 95555-8888",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3666-8888",
+				"descricao": "Residencial"
+			},
+			"email": "marcos.silva@email.com"
+		},
+		"documentos": {
+			"RG": "999888777",
+			"CPF": "888.777.666-55",
+			"cartao_do_SUS": "777888999"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Plano Vida",
+			"CNPJ": "88.777.666/0001-99",
+			"tempo_de_carencia": "120 dias"
+		},
+		"tipo_saguineo": "O-",
+		"Altura_e_peso": {
+			"altura": "1.78",
+			"peso": "74"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Histórico de asma na infância",
+		"preferencias": "Prefere médicos homens",
+		"medicamentos": {
+			"receitado": false,
+			"CRM_do_medico": "",
+			"nome_do_medicamento": "",
+			"dosagem": "",
+			"duracao": "",
+			"indicacao": "",
+			"observacao": ""
+		}
+	},
+	{
+		"nome_paciente": "Vanessa Gomes",
+		"data_de_nascimento": "1983-12-03",
+		"endereco": {
+			"cep": "04444-222",
+			"endereco": "Avenida das Orquídeas",
+			"numero": "78"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 93333-4444",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3777-4444",
+				"descricao": "Residencial"
+			},
+			"email": "vanessa.gomes@email.com"
+		},
+		"documentos": {
+			"RG": "222111333",
+			"CPF": "111.222.333-44",
+			"cartao_do_SUS": "333111222"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "A+",
+		"Altura_e_peso": {
+			"altura": "1.62",
+			"peso": "60"
+		},
+		"sexo": "Feminino",
+		"alergias": "Lactose",
+		"historico_medico": "Histórico de intolerância alimentar",
+		"preferencias": "Prefere médicos especializados",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "555444",
+			"nome_do_medicamento": "Antialérgico Z",
+			"dosagem": "10mg",
+			"duracao": "Uso contínuo",
+			"indicacao": "Controle de alergia",
+			"observacao": "Tomar antes de dormir"
+		}
+	},
+	{
+		"nome_paciente": "Eduardo Santos",
+		"data_de_nascimento": "1992-09-15",
+		"endereco": {
+			"cep": "06555-444",
+			"endereco": "Rua das Magnólias",
+			"numero": "88"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 90000-3333",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3222-5555",
+				"descricao": "Residencial"
+			},
+			"email": "eduardo.santos@email.com"
+		},
+		"documentos": {
+			"RG": "444555666",
+			"CPF": "555.666.777-88",
+			"cartao_do_SUS": "666777888"
+		},
+		"convenio": {
+			"convenio": true,
+			"nome_do_convenio": "Saúde Total",
+			"CNPJ": "55.666.777/0001-88",
+			"tempo_de_carencia": "90 dias"
+		},
+		"tipo_saguineo": "B+",
+		"Altura_e_peso": {
+			"altura": "1.80",
+			"peso": "78"
+		},
+		"sexo": "Masculino",
+		"alergias": "Nenhuma",
+		"historico_medico": "Pressão arterial elevada",
+		"preferencias": "Prefere consultas pela manhã",
+		"medicamentos": {
+			"receitado": false,
+			"CRM_do_medico": "",
+			"nome_do_medicamento": "",
+			"dosagem": "",
+			"duracao": "",
+			"indicacao": "",
+			"observacao": ""
+		}
+	},
+	{
+		"nome_paciente": "Bianca Rodrigues",
+		"data_de_nascimento": "1996-03-07",
+		"endereco": {
+			"cep": "07777-555",
+			"endereco": "Rua do Bosque",
+			"numero": "45"
+		},
+		"contato": {
+			"contato_1": {
+				"telefone_1": "(11) 93333-9999",
+				"descricao": "Celular"
+			},
+			"contato_2": {
+				"telefone_2": "(11) 3111-9999",
+				"descricao": "Residencial"
+			},
+			"email": "bianca.rodrigues@email.com"
+		},
+		"documentos": {
+			"RG": "777888999",
+			"CPF": "888.999.777-66",
+			"cartao_do_SUS": "999888777"
+		},
+		"convenio": {
+			"convenio": false,
+			"nome_do_convenio": "",
+			"CNPJ": "",
+			"tempo_de_carencia": ""
+		},
+		"tipo_saguineo": "A-",
+		"Altura_e_peso": {
+			"altura": "1.64",
+			"peso": "60"
+		},
+		"sexo": "Feminino",
+		"alergias": "Glúten",
+		"historico_medico": "Histórico de intolerância alimentar",
+		"preferencias": "Prefere médicos experientes",
+		"medicamentos": {
+			"receitado": true,
+			"CRM_do_medico": "999888",
+			"nome_do_medicamento": "Antialérgico Y",
+			"dosagem": "5mg",
+			"duracao": "Uso contínuo",
+			"indicacao": "Controle de alergia",
+			"observacao": "Tomar antes de dormir"
+		}
+	}
+]

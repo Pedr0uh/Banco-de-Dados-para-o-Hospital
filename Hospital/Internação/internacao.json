@@ -1,0 +1,72 @@
+[
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "987.654.321-00",
+		"COREN_do_infermeiro": "111111-SP",
+		"data_de_entrada": "2016-03-15",
+		"numero_quarto": "101",
+		"data_prevista_alta": "2016-03-20",
+		"data_efetiva_alta": "2016-03-19",
+		"descricao": "Internação para tratamento de hipertensão."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "123.456.789-00",
+		"COREN_do_infermeiro": "222222-SP",
+		"data_de_entrada": "2017-07-10",
+		"numero_quarto": "102",
+		"data_prevista_alta": "2017-07-15",
+		"data_efetiva_alta": "2017-07-14",
+		"descricao": "Internação para observação após cirurgia."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "321.654.987-00",
+		"COREN_do_infermeiro": "333333-SP",
+		"data_de_entrada": "2018-01-05",
+		"numero_quarto": "201",
+		"data_prevista_alta": "2018-01-10",
+		"data_efetiva_alta": "2018-01-10",
+		"descricao": "Internação para tratamento de asma."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "456.789.123-00",
+		"COREN_do_infermeiro": "444444-SP",
+		"data_de_entrada": "2019-05-20",
+		"numero_quarto": "101",
+		"data_prevista_alta": "2019-05-25",
+		"data_efetiva_alta": "2019-05-24",
+		"descricao": "Internação para controle de pressão arterial."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "987.654.321-00",
+		"COREN_do_infermeiro": "555555-SP",
+		"data_de_entrada": "2020-09-15",
+		"numero_quarto": "102",
+		"data_prevista_alta": "2020-09-20",
+		"data_efetiva_alta": "2020-09-19",
+		"descricao": "Internação para recuperação pós-operatória."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "123.456.789-00",
+		"COREN_do_infermeiro": "666666-SP",
+		"data_de_entrada": "2021-03-10",
+		"numero_quarto": "201",
+		"data_prevista_alta": "2021-03-15",
+		"data_efetiva_alta": "2021-03-14",
+		"descricao": "Internação para tratamento de alergia severa."
+	},
+	{
+		"paciente_internado": true,
+		"CPF_paciente": "321.654.987-00",
+		"COREN_do_infermeiro": "777777-SP",
+		"data_de_entrada": "2021-12-01",
+		"numero_quarto": "102",
+		"data_prevista_alta": "2021-12-05",
+		"data_efetiva_alta": "2021-12-04",
+		"descricao": "Internação para observação após crise asmática."
+	}
+]

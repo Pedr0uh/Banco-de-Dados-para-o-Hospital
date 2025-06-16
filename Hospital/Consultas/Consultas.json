@@ -1,0 +1,544 @@
+[
+    {
+        "data_e_hora": "2025-05-01T10:00:00",
+        "status": "1",
+        "CRM_medico": "123456-SP",
+        "CPF_paciente": "987.654.321-00",
+        "especialidade_procurada": "Gastroenterologia",
+        "consulta_valor": {
+            "valor": "300.00",
+            "convenio": true,
+            "numero_convenio": "CONV12345"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Omeprazol",
+                "Domperidona"
+            ],
+            "dosagem": [
+                "20mg",
+                "10mg"
+            ],
+            "duracao": [
+                "30 dias",
+                "15 dias"
+            ],
+            "indicacao": [
+                "Refluxo gástrico",
+                "Náusea"
+            ],
+            "observacao": "Tomar antes das refeições"
+        },
+        "encaminhamento": {
+            "encaminhamento": true,
+            "area_encaminhada": "Endoscopia"
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2025-05-15",
+            "descricao": "Avaliação pós-endoscopia"
+        },
+        "descricao": "Consulta para tratamento de refluxo gástrico"
+    },
+    {
+        "data_e_hora": "2025-05-03T14:30:00",
+        "status": "1",
+        "CRM_medico": "987654-SP",
+        "CPF_paciente": "123.456.789-00",
+        "especialidade_procurada": "Pediatria",
+        "consulta_valor": {
+            "valor": "200.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Paracetamol",
+                "Amoxicilina"
+            ],
+            "dosagem": [
+                "500mg",
+                "250mg"
+            ],
+            "duracao": [
+                "7 dias",
+                "10 dias"
+            ],
+            "indicacao": [
+                "Febre",
+                "Infecção bacteriana"
+            ],
+            "observacao": "Tomar conforme prescrição médica"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2025-05-10",
+            "descricao": "Acompanhamento do tratamento"
+        },
+        "descricao": "Consulta pediátrica para febre alta"
+    },
+    {
+        "data_e_hora": "2023-11-15T09:00:00",
+        "status": "1",
+        "CRM_medico": "654321-SP",
+        "CPF_paciente": "321.654.987-00",
+        "especialidade_procurada": "Dermatologia",
+        "consulta_valor": {
+            "valor": "250.00",
+            "convenio": true,
+            "numero_convenio": "CONV67890"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Clindamicina",
+                "Peróxido de Benzoíla"
+            ],
+            "dosagem": [
+                "300mg",
+                "5%"
+            ],
+            "duracao": [
+                "14 dias",
+                "Uso contínuo"
+            ],
+            "indicacao": [
+                "Acne",
+                "Tratamento tópico"
+            ],
+            "observacao": "Aplicar à noite"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2023-12-01",
+            "descricao": "Avaliação da resposta ao tratamento"
+        },
+        "descricao": "Consulta para tratamento de acne severa"
+    },
+    {
+        "data_e_hora": "2022-06-10T11:15:00",
+        "status": "1",
+        "CRM_medico": "555565-SP",
+        "CPF_paciente": "789.123.456-00",
+        "especialidade_procurada": "Clínica Geral",
+        "consulta_valor": {
+            "valor": "180.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Ibuprofeno"
+            ],
+            "dosagem": [
+                "600mg"
+            ],
+            "duracao": [
+                "7 dias"
+            ],
+            "indicacao": [
+                "Dor muscular"
+            ],
+            "observacao": "Tomar após as refeições"
+        },
+        "encaminhamento": {
+            "encaminhamento": true,
+            "area_encaminhada": "Fisioterapia"
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2022-06-20",
+            "descricao": "Acompanhamento da dor muscular"
+        },
+        "descricao": "Consulta para dor muscular após lesão"
+    },
+    {
+        "data_e_hora": "2021-03-05T16:00:00",
+        "status": "1",
+        "CRM_medico": "223344-SP",
+        "CPF_paciente": "555.666.777-88",
+        "especialidade_procurada": "Gastroenterologia",
+        "consulta_valor": {
+            "valor": "220.00",
+            "convenio": true,
+            "numero_convenio": "CONV11223"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Pantoprazol"
+            ],
+            "dosagem": [
+                "40mg"
+            ],
+            "duracao": [
+                "30 dias"
+            ],
+            "indicacao": [
+                "Úlcera gástrica"
+            ],
+            "observacao": "Tomar em jejum"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2021-04-05",
+            "descricao": "Avaliação da resposta ao tratamento"
+        },
+        "descricao": "Consulta para tratamento de úlcera gástrica"
+    },
+    {
+        "data_e_hora": "2020-12-20T10:30:00",
+        "status": "1",
+        "CRM_medico": "445566-SP",
+        "CPF_paciente": "888.999.777-66",
+        "especialidade_procurada": "Dermatologia",
+        "consulta_valor": {
+            "valor": "200.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Hidrocortisona"
+            ],
+            "dosagem": [
+                "1%"
+            ],
+            "duracao": [
+                "15 dias"
+            ],
+            "indicacao": [
+                "Dermatite"
+            ],
+            "observacao": "Aplicar duas vezes ao dia"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": false,
+            "data_do_retorno": "",
+            "descricao": ""
+        },
+        "descricao": "Consulta para tratamento de dermatite"
+    },
+    {
+        "data_e_hora": "2019-08-15T15:00:00",
+        "status": "1",
+        "CRM_medico": "556677-SP",
+        "CPF_paciente": "111.222.333-44",
+        "especialidade_procurada": "Clínica Geral",
+        "consulta_valor": {
+            "valor": "150.00",
+            "convenio": true,
+            "numero_convenio": "CONV33445"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Dipirona"
+            ],
+            "dosagem": [
+                "500mg"
+            ],
+            "duracao": [
+                "5 dias"
+            ],
+            "indicacao": [
+                "Febre"
+            ],
+            "observacao": "Tomar a cada 8 horas"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": false,
+            "data_do_retorno": "",
+            "descricao": ""
+        },
+        "descricao": "Consulta para febre persistente"
+    },
+    {
+        "data_e_hora": "2025-05-01T10:00:00",
+        "status": "1",
+        "CRM_medico": "123456-SP",
+        "CPF_paciente": "987.654.321-00",
+        "especialidade_procurada": "Gastroenterologia",
+        "consulta_valor": {
+            "valor": "300.00",
+            "convenio": true,
+            "numero_convenio": "CONV12345"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Omeprazol",
+                "Domperidona"
+            ],
+            "dosagem": [
+                "20mg",
+                "10mg"
+            ],
+            "duracao": [
+                "30 dias",
+                "15 dias"
+            ],
+            "indicacao": [
+                "Refluxo gástrico",
+                "Náusea"
+            ],
+            "observacao": "Tomar antes das refeições"
+        },
+        "encaminhamento": {
+            "encaminhamento": true,
+            "area_encaminhada": "Endoscopia"
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2025-05-15",
+            "descricao": "Avaliação pós-endoscopia"
+        },
+        "descricao": "Consulta para tratamento de refluxo gástrico"
+    },
+    {
+        "data_e_hora": "2025-05-03T14:30:00",
+        "status": "1",
+        "CRM_medico": "987654-SP",
+        "CPF_paciente": "123.456.789-00",
+        "especialidade_procurada": "Pediatria",
+        "consulta_valor": {
+            "valor": "200.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Paracetamol",
+                "Amoxicilina"
+            ],
+            "dosagem": [
+                "500mg",
+                "250mg"
+            ],
+            "duracao": [
+                "7 dias",
+                "10 dias"
+            ],
+            "indicacao": [
+                "Febre",
+                "Infecção bacteriana"
+            ],
+            "observacao": "Tomar conforme prescrição médica"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2025-05-10",
+            "descricao": "Acompanhamento do tratamento"
+        },
+        "descricao": "Consulta pediátrica para febre alta"
+    },
+    {
+        "data_e_hora": "2023-11-15T09:00:00",
+        "status": "1",
+        "CRM_medico": "654321-SP",
+        "CPF_paciente": "321.654.987-00",
+        "especialidade_procurada": "Dermatologia",
+        "consulta_valor": {
+            "valor": "250.00",
+            "convenio": true,
+            "numero_convenio": "CONV67890"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Clindamicina",
+                "Peróxido de Benzoíla"
+            ],
+            "dosagem": [
+                "300mg",
+                "5%"
+            ],
+            "duracao": [
+                "14 dias",
+                "Uso contínuo"
+            ],
+            "indicacao": [
+                "Acne",
+                "Tratamento tópico"
+            ],
+            "observacao": "Aplicar à noite"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2023-12-01",
+            "descricao": "Avaliação da resposta ao tratamento"
+        },
+        "descricao": "Consulta para tratamento de acne severa"
+    },
+    {
+        "data_e_hora": "2022-06-10T11:15:00",
+        "status": "1",
+        "CRM_medico": "555565-SP",
+        "CPF_paciente": "789.123.456-00",
+        "especialidade_procurada": "Clínica Geral",
+        "consulta_valor": {
+            "valor": "180.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Ibuprofeno"
+            ],
+            "dosagem": [
+                "600mg"
+            ],
+            "duracao": [
+                "7 dias"
+            ],
+            "indicacao": [
+                "Dor muscular"
+            ],
+            "observacao": "Tomar após as refeições"
+        },
+        "encaminhamento": {
+            "encaminhamento": true,
+            "area_encaminhada": "Fisioterapia"
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2022-06-20",
+            "descricao": "Acompanhamento da dor muscular"
+        },
+        "descricao": "Consulta para dor muscular após lesão"
+    },
+    {
+        "data_e_hora": "2021-03-05T16:00:00",
+        "status": "1",
+        "CRM_medico": "223344-SP",
+        "CPF_paciente": "555.666.777-88",
+        "especialidade_procurada": "Gastroenterologia",
+        "consulta_valor": {
+            "valor": "220.00",
+            "convenio": true,
+            "numero_convenio": "CONV11223"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Pantoprazol"
+            ],
+            "dosagem": [
+                "40mg"
+            ],
+            "duracao": [
+                "30 dias"
+            ],
+            "indicacao": [
+                "Úlcera gástrica"
+            ],
+            "observacao": "Tomar em jejum"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": true,
+            "data_do_retorno": "2021-04-05",
+            "descricao": "Avaliação da resposta ao tratamento"
+        },
+        "descricao": "Consulta para tratamento de úlcera gástrica"
+    },
+    {
+        "data_e_hora": "2020-12-20T10:30:00",
+        "status": "1",
+        "CRM_medico": "445566-SP",
+        "CPF_paciente": "888.999.777-66",
+        "especialidade_procurada": "Dermatologia",
+        "consulta_valor": {
+            "valor": "200.00",
+            "convenio": false,
+            "numero_convenio": ""
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Hidrocortisona"
+            ],
+            "dosagem": [
+                "1%"
+            ],
+            "duracao": [
+                "15 dias"
+            ],
+            "indicacao": [
+                "Dermatite"
+            ],
+            "observacao": "Aplicar duas vezes ao dia"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": false,
+            "data_do_retorno": "",
+            "descricao": ""
+        },
+        "descricao": "Consulta para tratamento de dermatite"
+    },
+    {
+        "data_e_hora": "2019-08-15T15:00:00",
+        "status": "1",
+        "CRM_medico": "556677-SP",
+        "CPF_paciente": "111.222.333-44",
+        "especialidade_procurada": "Clínica Geral",
+        "consulta_valor": {
+            "valor": "150.00",
+            "convenio": true,
+            "numero_convenio": "CONV33445"
+        },
+        "receita_do_medico": {
+            "medicamento_receitado": [
+                "Dipirona"
+            ],
+            "dosagem": [
+                "500mg"
+            ],
+            "duracao": [
+                "5 dias"
+            ],
+            "indicacao": [
+                "Febre"
+            ],
+            "observacao": "Tomar a cada 8 horas"
+        },
+        "encaminhamento": {
+            "encaminhamento": false,
+            "area_encaminhada": ""
+        },
+        "retorno": {
+            "retorno_necessario": false,
+            "data_do_retorno": "",
+            "descricao": ""
+        },
+        "descricao": "Consulta para febre persistente"
+    }
+]
