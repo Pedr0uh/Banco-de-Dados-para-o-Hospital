@@ -103,13 +103,183 @@ Q:
 R: existem duas consultas apenas em 2020 e as duas não foram feitas sob convenio, o valor medio das duas consultas é de 200
 
 
-Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta:
+2. Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta:
 
+Q:
+```js
+db.internacoes.find({
+  $expr: {
+    $gt: ["$data_efetiva_alta", "$data_prevista_alta"]
+  }
+})
+```
+R: No Banco de Dados não existem internções com data de alta maior que a data prevista de alta.
 
+Receituário completo da primeira consulta registrada com receituário associado:
 
-Receituário completo da primeira consulta registrada com receituário associado.
-Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio).
-Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta.
+Q:
+```js
+db.consultas.find(
+  { "receita_do_medico": { $exists: true, $ne: null } }
+).sort(
+  { "data_e_hora": 1 }
+).limit(1)
+```
+R: 
+```js
+{
+  "_id": {
+    "$oid": "68251da55c2870d7ba999478"
+  },
+  "data_e_hora": {
+    "$date": "2019-08-15T15:00:00.000Z"
+  },
+  "status": "1",
+  "CRM_medico": "556677-SP",
+  "CPF_paciente": "111.222.333-44",
+  "especialidade_procurada": "Clínica Geral",
+  "consulta_valor": {
+    "valor": 150,
+    "convenio": true,
+    "numero_convenio": "CONV33445"
+  },
+  "receita_do_medico": {
+    "medicamento_receitado": [
+      "Dipirona"
+    ],
+    "dosagem": [
+      "500mg"
+    ],
+    "duracao": [
+      "5 dias"
+    ],
+    "indicacao": [
+      "Febre"
+    ],
+    "observacao": "Tomar a cada 8 horas"
+  },
+  "encaminhamento": {
+    "encaminhamento": false,
+    "area_encaminhada": ""
+  },
+  "retorno": {
+    "retorno_necessario": false,
+    "data_do_retorno": "",
+    "descricao": ""
+  },
+  "descricao": "Consulta para febre persistente",
+  "internacao": true
+}
+```
+
+Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio):
+
+Q:
+
+para mais cara:
+
+```js
+db.consultas.find(
+  { "consulta_valor.convenio": false }
+).sort(
+  { "consulta_valor.valor": -1 }
+).limit(1)
+```
+
+para mais barata:
+
+```js
+db.consultas.find(
+  { "consulta_valor.convenio": false }
+).sort(
+  { "consulta_valor.valor": 1 }
+).limit(1)
+```
+
+Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta:
+
+Q:
+```js
+db.internacoes.aggregate([
+  {
+    $lookup: {
+      from: "quartos",
+      localField: "numero_quarto",
+      foreignField: "numero_quarto",
+      as: "quarto_info"
+    }
+  },
+  {
+    $unwind: "$quarto_info"
+  },
+  {
+    $addFields: {
+      dataEntradaDate: { $dateFromString: { dateString: "$data_de_entrada" } },
+      dataAltaDate: { $dateFromString: { dateString: "$data_efetiva_alta" } },
+      valorDiarioNum: { $toDouble: "$quarto_info.valor_diario" }
+    }
+  },
+  {
+    $addFields: {
+      diffDias: {
+        $ceil: {
+          $divide: [
+            { $subtract: ["$dataAltaDate", "$dataEntradaDate"] },
+            1000 * 60 * 60 * 24
+          ]
+        }
+      }
+    }
+  },
+  {
+    $addFields: {
+      totalInternacao: { $multiply: ["$diffDias", "$valorDiarioNum"] }
+    }
+  },
+  {
+    $project: {
+      _id: 1,
+      paciente_internado: 1,
+      CPF_paciente: 1,
+      COREN_do_infermeiro: 1,
+      data_de_entrada: 1,
+      data_prevista_alta: 1,
+      data_efetiva_alta: 1,
+      numero_quarto: 1,
+      descricao: 1,
+      quarto_info: 1,
+      diffDias: 1,
+      totalInternacao: 1
+    }
+  }
+])
+```
+R: exemplo: 
+```js
+{
+  _id: ObjectId('6821d83c7ce4386018e1d04d'),
+  paciente_internado: true,
+  CPF_paciente: '321.654.987-00',
+  COREN_do_infermeiro: '333333-SP',
+  data_de_entrada: '2018-01-05',
+  numero_quarto: '201',
+  data_prevista_alta: '2018-01-10',
+  data_efetiva_alta: '2018-01-10',
+  descricao: 'Internação para tratamento de asma.',
+  quarto_info: {
+    _id: ObjectId('6821d84d7ce4386018e1d055'),
+    numero_quarto: '201',
+    tipo_quarto: 'Enfermaria',
+    valor_diario: '150.00',
+    tipo: 'Coletivo',
+    COREN_infermeiro_responsalvel: '444444-SP',
+    COREN_infermeiro_responsalvel_2: '555555-SP',
+    internacao: false
+  },
+  diffDias: 5,
+  totalInternacao: 750
+```
+
 Data, procedimento e número de quarto de internações em quartos do tipo “apartamento”.
 Nome do paciente, data da consulta e especialidade de todas as consultas em que os pacientes eram menores de 18 anos na data da consulta e cuja especialidade não seja “pediatria”, ordenando por data de realização da consulta.
 Nome do paciente, nome do médico, data da internação e procedimentos das internações realizadas por médicos da especialidade “gastroenterologia”, que tenham acontecido em “enfermaria”.
