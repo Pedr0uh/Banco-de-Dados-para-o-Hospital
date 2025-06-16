@@ -72,6 +72,7 @@ db.medicos.updateMany( { nome_medico: { $in: [ "Dra. Mariana Souza", "Dr. Gustav
 Crie um script e nele inclua consultas que retornem:
 
 1. Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio:
+
 Q:
 ```js
   db.consultas.aggregate([
