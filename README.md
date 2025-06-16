@@ -103,7 +103,7 @@ Q:
 R: existem duas consultas apenas em 2020 e as duas não foram feitas sob convenio, o valor medio das duas consultas é de 200
 
 
-2. Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta:
+  2. Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta:
 
 Q:
 ```js
@@ -115,7 +115,7 @@ db.internacoes.find({
 ```
 R: No Banco de Dados não existem internções com data de alta maior que a data prevista de alta.
 
-Receituário completo da primeira consulta registrada com receituário associado:
+  3. Receituário completo da primeira consulta registrada com receituário associado:
 
 Q:
 ```js
@@ -172,7 +172,7 @@ R:
 }
 ```
 
-Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio):
+  4. Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio):
 
 Q:
 
@@ -196,7 +196,7 @@ db.consultas.find(
 ).limit(1)
 ```
 
-Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta:
+  5. Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta:
 
 Q:
 ```js
@@ -280,9 +280,170 @@ R: exemplo:
   totalInternacao: 750
 ```
 
-Data, procedimento e número de quarto de internações em quartos do tipo “apartamento”.
-Nome do paciente, data da consulta e especialidade de todas as consultas em que os pacientes eram menores de 18 anos na data da consulta e cuja especialidade não seja “pediatria”, ordenando por data de realização da consulta.
-Nome do paciente, nome do médico, data da internação e procedimentos das internações realizadas por médicos da especialidade “gastroenterologia”, que tenham acontecido em “enfermaria”.
-Os nomes dos médicos, seus CRMs e a quantidade de consultas que cada um realizou.
-Todos os médicos que tenham "Gabriel" no nome. 
-Os nomes, CORENs e número de internações de enfermeiros que participaram de mais de uma internação.
+  6.Data, procedimento e número de quarto de internações em quartos do tipo “apartamento”:
+
+Q:
+```js
+db.internacao.aggregate([
+  {
+    $lookup: {
+      from: "quartos",
+      localField: "numero_quarto",
+      foreignField: "numero_quarto",
+      as: "quarto_info"
+    }
+  },
+  { 
+    $unwind: "$quarto_info" 
+  },
+  { 
+    $match: { "quarto_info.tipo_quarto": "Apartamento" } 
+  },
+  {
+    $project: {
+      _id: 0,
+      data_de_entrada: 1,
+      descricao: 1,
+      numero_quarto: 1
+    }
+  }
+])
+```
+R:
+```
+{
+  data_de_entrada: '2016-03-15',
+  numero_quarto: '101',
+  descricao: 'Internação para tratamento de hipertensão.'
+},
+
+{
+  data_de_entrada: '2019-05-20',
+  numero_quarto: '101',
+  descricao: 'Internação para controle de pressão arterial.'
+}
+```
+  
+  7. Nome do paciente, data da consulta e especialidade de todas as consultas em que os pacientes eram menores de 18 anos na data da consulta e cuja especialidade não seja “pediatria”, ordenando por data de realização da consulta:
+
+Q:
+```js
+db.consultas.aggregate([
+  {
+    $lookup: {
+      from: "pacientes",
+      localField: "CPF_paciente",
+      foreignField: "documentos.CPF",
+      as: "paciente_info"
+    }
+  },
+  { 
+    $unwind: "$paciente_info" 
+  },
+  {
+    $addFields: {
+      dataNascimento: { $dateFromString: { dateString: "$paciente_info.data_de_nascimento" } },
+      dataConsulta: "$data_e_hora"
+    }
+  },
+  {
+    $addFields: {
+      idade: {
+        $dateDiff: {
+          startDate: "$dataNascimento",
+          endDate: "$dataConsulta",
+          unit: "year"
+        }
+      }
+    }
+  },
+  {
+    $match: {
+      idade: { $lt: 18 },
+      especialidade_procurada: { $ne: "Pediatria" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      nome_paciente: "$paciente_info.nome_paciente",
+      data_consulta: "$data_e_hora",
+      especialidade: "$especialidade_procurada"
+    }
+  },
+  {
+    $sort: { data_consulta: 1 }
+  }
+])
+```
+R: Não exite paciente menor de 18 anos no Banco :/
+
+  8. Os nomes dos médicos, seus CRMs e a quantidade de consultas que cada um realizou:
+
+```js
+db.consultas.aggregate([
+  {
+    $group: {
+      _id: "$CRM_medico",
+      total_consultas: { $sum: 1 }
+    }
+  },
+  {
+    $lookup: {
+      from: "medicos",
+      localField: "_id",
+      foreignField: "documentos.CRM",
+      as: "dados_medico"
+    }
+  },
+  { $unwind: "$dados_medico" },
+  {
+    $project: {
+      _id: 0,
+      nome_medico: "$dados_medico.nome_medico",
+      CRM: "$_id",
+      total_consultas: 1
+    }
+  }
+])
+```
+R: Todas as respostas trazem que cada medico teve 2 numero de consultas
+
+  9. Todos os médicos que tenham "Gabriel" no nome:
+
+```js
+db.medicos.find({ nome_medico: /Gabriel/i })
+```
+R: não tem Gabriel :/
+
+  10. Os nomes, CORENs e número de internações de enfermeiros que participaram de mais de uma internação:
+
+Q:
+```js
+db.internacao.aggregate([
+  {
+    $group: {
+      _id: "$COREN_do_infermeiro",
+      total_internacoes: { $sum: 1 }
+    }
+  },
+  {
+    $lookup: {
+      from: "enfermeiros",
+      localField: "_id",
+      foreignField: "documentos.COREN",
+      as: "enfermeiro"
+    }
+  },
+  { $unwind: "$enfermeiro" },
+  {
+    $project: {
+      _id: 0,
+      nome: "$enfermeiro.nome",
+      COREN: "$_id",
+      total_internacoes: 1
+    }
+  }
+])
+```
+R: Como cada infermeiro só tem uma internação, fiz uma query apenas para trazer qual o total de internação de cada infermeiro. Cada um tem uma internação.
